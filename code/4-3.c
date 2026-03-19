@@ -6,7 +6,7 @@ int main()
     scanf("%d", &a);
     char c = 't';
 
-    while(a >= 2) {
+    if (a >= 2) {
         for (int i = 2; i < a; i++) {
             if (a % i == 0) {
             c = 'f';
@@ -19,10 +19,10 @@ int main()
         } else if(c == 'f') {
             printf("%s", "false");
         }
+    } else if(a < 2) {
+        printf("%s", "fail");
     }
-
-    printf("%s", "fail");
-
+    
     return 0;
 }
 
