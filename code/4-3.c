@@ -15,7 +15,7 @@ int main()
         }
 
         if(c == 't') {
-            printf("%s", "ture");
+            printf("%s", "true");
         } else if(c == 'f') {
             printf("%s", "false");
         }
