@@ -20,7 +20,7 @@ int main()
             printf("%s", "false");
         }
     } else if(a < 2) {
-        
+        printf("%s", "false");
     }
     
     return 0;
