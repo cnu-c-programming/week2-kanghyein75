@@ -6,18 +6,22 @@ int main()
     scanf("%d", &a);
     char c = 't';
 
-    for (int i = 2; i < a; i++) {
-        if (a % i == 0) {
+    while(a >= 2) {
+        for (int i = 2; i < a; i++) {
+            if (a % i == 0) {
             c = 'f';
             break;
+            }
+        }
+
+        if(c == 't') {
+            printf("%s", "ture");
+        } else if(c == 'f') {
+            printf("%s", "false");
         }
     }
 
-    if(c == 't') {
-        printf("%s", "ture");
-    } else if(c == 'f') {
-        printf("%s", "false");
-    }
+    printf("%s", "fail");
 
     return 0;
 }
