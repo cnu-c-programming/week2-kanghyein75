@@ -4,11 +4,11 @@ int main()
 {
     int a;
     scanf("%d", &a);
-    char c = 'f'
+    char c = 't';
 
     for (int i = 2; i < a; i++) {
         if (a % i == 0) {
-            c = 't';
+            c = 'f';
             break;
         }
     }
